@@ -1,0 +1,72 @@
+# Carbon From Above
+
+### Orbital Diamond Fabrication from Asteroid Carbon Feedstock
+
+**Solbakken Research Initiative · March 2026 · Version 5**
+
+> Speculative / Pre-Experimental — this is a framework paper, not a report of experimental results.
+
+-----
+
+## Overview
+
+Silicon’s radiation vulnerability is a structural problem for orbital AI compute. This paper proposes a closed-loop orbital supply chain converting ureilite asteroid carbon into CVD-grown diamond substrates via concentrated solar power — co-located with compute infrastructure.
+
+Diamond’s 5.5 eV bandgap raises single-event upset (SEU) thresholds far above silicon’s 1.1 eV. Its thermal conductivity (~2,000 W/mK vs silicon’s ~150 W/mK) enables heat spreading in vacuum without convection. Its UV–IR transparency suits photonic AI architectures directly.
+
+The framework is speculative. The constituent technologies — microgravity CVD (Wake Shield, 1995), ISRU chemistry (MOXIE, 2021), deployable solar concentrators — exist. Integration is the challenge.
+
+-----
+
+## Three-Phase Roadmap
+
+|Phase            |Focus                                      |Horizon  |
+|-----------------|-------------------------------------------|---------|
+|1 — Validate     |ISS pyrolysis; CubeSat CVD; cost models    |2026–2030|
+|2 — Prototype    |50 kW furnace; cm² wafers; purification    |2030–2040|
+|3 — Industrialize|Asteroid ISRU reactors; orbital lithography|2040–2050|
+
+-----
+
+## Key Claims
+
+- Ureilite asteroids contain 2–4 wt% carbon, graphite-dominant, suitable as CVD feedstock
+- 500 m² orbital solar concentrator at 1,366 W/m² meets CVD kilowatt-scale demand
+- Estimated yield: ~2 kg diamond/year at zero fuel cost
+- Radiation-hard silicon sacrifices 30–50% die area to redundancy; diamond addresses this at the material level
+
+-----
+
+## Kill Conditions
+
+Two Phase 1 kill conditions gate the program:
+
+- CH₄ contamination from ureilite pyrolysis that cannot be remediated by catalytic purification
+- No viable terrestrial cost crossover identified by technoeconomic model
+
+-----
+
+## Contents
+
+|File                    |Description                               |
+|------------------------|------------------------------------------|
+|`index.html`            |Solbakken Research Initiative landing page|
+|`carbon-from-above.html`|Full paper — rendered HTML                |
+
+-----
+
+## Epistemic Status
+
+Claims in this paper carry three levels of grounding:
+
+- **Established physics** — bandgap/SEU relationship; thermal conductivity values
+- **Physically motivated estimate** — ~2 kg/year yield; solar flux calculations
+- **Does not yet exist** — closed orbital supply chain; asteroid ISRU at this scale
+
+-----
+
+## About
+
+The Solbakken Research Initiative is an independent, unaffiliated research program working across photonic AI acceleration, diamond electronics, and orbital manufacturing. This paper is one of several speculative frameworks under active development.
+
+GitHub: [bluebflatminor](https://github.com/bluebflatminor)
