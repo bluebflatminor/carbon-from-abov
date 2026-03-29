@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solbakken Research Initiative</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+–bg: #0a0c0f;
+–surface: #111318;
+–border: #1e2229;
+–accent: #c8a96e;
+–accent-dim: #7a6340;
+–text: #d4cfc8;
+–text-dim: #6b6660;
+–text-bright: #ede8e0;
+–mono: ‘DM Mono’, monospace;
+–serif: ‘Playfair Display’, serif;
+–body: ‘Cormorant Garamond’, serif;
+}
+
+body {
+background: var(–bg);
+color: var(–text);
+font-family: var(–body);
+font-size: 17px;
+line-height: 1.75;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+header {
+border-bottom: 1px solid var(–border);
+padding: 3.5rem 2.5rem 3rem;
+max-width: 860px;
+margin: 0 auto;
+width: 100%;
+}
+
+.org-label {
+font-family: var(–mono);
+font-size: 0.62rem;
+letter-spacing: 0.22em;
+text-transform: uppercase;
+color: var(–accent);
+margin-bottom: 1.2rem;
+}
+
+h1 {
+font-family: var(–serif);
+font-size: clamp(1.8rem, 4vw, 2.8rem);
+font-weight: 700;
+color: var(–text-bright);
+line-height: 1.15;
+margin-bottom: 1rem;
+}
+
+.org-desc {
+font-family: var(–body);
+font-size: 1rem;
+color: var(–text-dim);
+max-width: 520px;
+line-height: 1.7;
+}
+
+main {
+max-width: 860px;
+margin: 0 auto;
+padding: 3rem 2.5rem 6rem;
+width: 100%;
+flex: 1;
+}
+
+.section-label {
+font-family: var(–mono);
+font-size: 0.62rem;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(–accent-dim);
+margin-bottom: 1.5rem;
+display: flex;
+align-items: center;
+gap: 0.8rem;
+}
+
+.section-label::after {
+content: ‘’;
+flex: 1;
+height: 1px;
+background: var(–border);
+}
+
+/* PAPER CARD */
+.paper-card {
+display: block;
+text-decoration: none;
+border: 1px solid var(–border);
+padding: 2rem 2.2rem;
+background: var(–surface);
+transition: border-color 0.2s ease;
+position: relative;
+}
+
+.paper-card:hover {
+border-color: var(–accent-dim);
+}
+
+.paper-card:hover .paper-arrow {
+transform: translateX(4px);
+color: var(–accent);
+}
+
+.paper-meta {
+font-family: var(–mono);
+font-size: 0.62rem;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+color: var(–text-dim);
+margin-bottom: 0.8rem;
+display: flex;
+gap: 1.2rem;
+}
+
+.paper-meta .status {
+color: var(–accent-dim);
+}
+
+.paper-title {
+font-family: var(–serif);
+font-size: 1.45rem;
+font-weight: 700;
+color: var(–text-bright);
+line-height: 1.2;
+margin-bottom: 0.4rem;
+}
+
+.paper-subtitle {
+font-family: var(–serif);
+font-style: italic;
+font-size: 0.95rem;
+color: var(–text-dim);
+margin-bottom: 1.2rem;
+}
+
+.paper-abstract {
+font-size: 0.9rem;
+color: var(–text);
+line-height: 1.7;
+margin-bottom: 1.4rem;
+max-width: 600px;
+}
+
+.paper-tags {
+display: flex;
+gap: 0.5rem;
+flex-wrap: wrap;
+margin-bottom: 1.2rem;
+}
+
+.tag {
+font-family: var(–mono);
+font-size: 0.58rem;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+padding: 0.22rem 0.6rem;
+border: 1px solid var(–border);
+color: var(–text-dim);
+}
+
+.paper-arrow {
+font-family: var(–mono);
+font-size: 0.72rem;
+color: var(–accent-dim);
+letter-spacing: 0.05em;
+transition: transform 0.2s ease, color 0.2s ease;
+display: inline-block;
+}
+
+/* FOOTER */
+footer {
+border-top: 1px solid var(–border);
+padding: 1.8rem 2.5rem;
+max-width: 860px;
+margin: 0 auto;
+width: 100%;
+font-family: var(–mono);
+font-size: 0.6rem;
+letter-spacing: 0.1em;
+color: var(–text-dim);
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 0.5rem;
+}
+
+@keyframes fadeUp {
+from { opacity: 0; transform: translateY(14px); }
+to   { opacity: 1; transform: translateY(0); }
+}
+
+header { animation: fadeUp 0.5s ease both; }
+main   { animation: fadeUp 0.5s 0.08s ease both; }
+</style>
+
+</head>
+<body>
+
+<header>
+  <div class="org-label">Solbakken Research Initiative</div>
+  <h1>Independent Research in<br>Photonic &amp; Materials Computing</h1>
+  <p class="org-desc">Speculative and pre-experimental frameworks for next-generation compute substrates, photonic AI acceleration, and orbital manufacturing. Independent. Pre-institutional.</p>
+</header>
+
+<main>
+
+  <div class="section-label">Publications &amp; Working Papers</div>
+
+  <a class="paper-card" href="carbon-from-above.html">
+    <div class="paper-meta">
+      <span>March 2026</span>
+      <span class="status">Speculative · Pre-Experimental</span>
+      <span>Version 5</span>
+    </div>
+    <div class="paper-title">Carbon From Above</div>
+    <div class="paper-subtitle">Orbital Diamond Fabrication from Asteroid Carbon Feedstock</div>
+    <p class="paper-abstract">A closed-loop orbital supply chain converting ureilite asteroid carbon into CVD-grown diamond substrates via concentrated solar power. Addresses silicon's radiation vulnerability for orbital AI compute through a three-phase development pathway from 2026 to 2050.</p>
+    <div class="paper-tags">
+      <span class="tag">Diamond CVD</span>
+      <span class="tag">ISRU</span>
+      <span class="tag">Orbital Solar</span>
+      <span class="tag">Radiation Hardness</span>
+      <span class="tag">Photonic Compute</span>
+    </div>
+    <span class="paper-arrow">Read paper →</span>
+  </a>
+
+</main>
+
+<footer>
+  <span>Solbakken Research Initiative</span>
+  <span>Independent · Unaffiliated · Open</span>
+</footer>
+
+</body>
+</html>
